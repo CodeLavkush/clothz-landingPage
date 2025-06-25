@@ -41,8 +41,8 @@ function animateProductCards() {
 window.animateProductCards = animateProductCards;
 animateProductCards()
 
-gsap.from('.contact-text', { scrollTrigger: { trigger: '.contact-text', start: 'top 80%', toggleActions: "play none none none"}, opacity: 0, y: -50, ease: 'power.in',  duration: .8}, 1)
-gsap.from('.contact-card', { scrollTrigger: { trigger: '.contact-card', start: 'top 80%', toggleActions: "play none none none"}, opacity: 0, y: 50, ease: 'power.in',  duration: .8}, '<1')
+gsap.from('.contact-text', { scrollTrigger: { trigger: '.contact-text', start: 'top 99%', toggleActions: "play none none none"}, opacity: 0, y: -50, ease: 'power.in',  duration: .8}, 1)
+gsap.from('.contact-card', { scrollTrigger: { trigger: '.contact-card', start: 'top 99', toggleActions: "play none none none"}, opacity: 0, y: 50, ease: 'power.in',  duration: .8}, '<1')
 
-gsap.from('.brand-name', { scrollTrigger: { trigger: '.brand-name', start: 'top 95%', toggleActions: "play none none none"}, opacity: 0, ease: 'power.in',  duration: .8}, 1)
-gsap.from('.creater', { scrollTrigger: { trigger: '.creater', start: 'top 98%', toggleActions: "play none none none"}, opacity: 0, ease: 'power.in',  duration: .8}, '<1')
+gsap.from('.brand-name', { scrollTrigger: { trigger: '.brand-name', start: 'top 99%', toggleActions: "play none none none"}, opacity: 0, ease: 'power.in',  duration: .8}, 1)
+gsap.from('.creater', { scrollTrigger: { trigger: '.creater', start: 'top 99%', toggleActions: "play none none none"}, opacity: 0, ease: 'power.in',  duration: .8}, '<1')
