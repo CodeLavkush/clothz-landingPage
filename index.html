@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothz</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+        <script src="./src/script.js" defer></script>
+    <script src="./src/animate.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar z-10 fixed mt-2 top-0 w-screen h-16 px-4">
+        <div class="w-full h-full flex justify-center items-center">
+            <div class="w-full h-full flex justify-center items-center bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl lg:w-1/2">
+                <a class="text-2xl font-bold text-white uppercase font-sans tracking-wider" href="">Clothz</a>
+            </div>
+        </div>
+    </header>
+    <section class="w-screen h-screen relative">
+        <video src="./src/Assets/hero/sm_hero.mp4" autoplay muted playsinline loop class="flex md:hidden inset-0 z-0 absolute w-full h-full object-cover"></video>
+        <video src="./src/Assets/hero/lg_hero.mp4" autoplay muted playsinline loop class="hidden md:flex inset-0 z-0 absolute w-full h-full object-cover"></video>
+        <div class="hero-content absolute inset-0 bg-black/60 flex justify-center items-center flex-col p-4 gap-4">
+            <h1 class="tagline-heading font-bold text-4xl text-white font-sans uppercase tracking-tight text-center">Welcome to Clothz</h1>
+            <p class="tagline-para text-lg text-white max-w-80 leading-6 text-center tracking-wider font-sans">Discover the finest
+                fashion, redefined with style and elegance.</p>
+            <button class="tagline-btn ring-2 ring-white cursor-pointer py-2 px-4 mt-2 rounded-md">
+                <a class="text-white text-lg font-bold font-mono tracking-wider uppercase" href="#products">Order
+                    Now</a>
+            </button>
+        </div>
+    </section>
+    <section class="w-screen h-screen">
+        <div class="w-full h-full flex justify-center items-center bg-gray-800">
+            <div class="grid h-full w-full grid-cols-4 grid-rows-3 gap-3 p-6 lg:p-20 xl:m-64 lg:m-32 md:m-16">
+                <div class="product-img col-span-2 row-span-1 rounded-xl overflow-hidden transition-all shadow-lg cursor-pointer">
+                    <img src="./src/Assets/showcase/showcase_1.jpg" class="showcase-1 w-full h-full object-cover" alt="">
+                </div>
+                <div class="product-img col-span-2 row-span-1 rounded-xl overflow-hidden transition-all shadow-lg cursor-pointer">
+                    <img src="./src/Assets/showcase/showcase_2.jpg" class="showcase-2 w-full h-full object-cover" alt="">
+                </div>
+                <div class="product-img col-span-4 row-span-2 rounded-xl overflow-hidden transition-all shadow-lg cursor-pointer">
+                    <img src="./src/Assets/showcase/showcase_3.jpg" class="showcase-3 w-full h-full object-cover" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="w-screen h-screen">
+        <div class="relative w-full h-full bg-white overflow-y-scroll">
+            <div class="category w-full flex justify-around mt-6 items-center bg-white h-20 top-0 sticky z-10">
+                <div class="relative text-center">
+                    <button class="men cursor-pointer font-bold text-2xl font-mono tracking-wider uppercase">Men</button>
+                    <div class="male-underline bg-blue-500 hidden w-full h-1 transition-all absolute bottom-0"></div>
+                </div>
+                <div class="relative text-center">
+                    <button class="women cursor-pointer font-bold text-2xl font-mono tracking-wider uppercase">Women</button>
+                    <div class="female-underline bg-red-500 w-full h-1 transition-all absolute bottom-0"></div>
+                </div>
+            </div>
+
+            <div class="male-cloths hidden justify-center items-center flex-col lg:flex-row gap-2">
+                <div class="p-4">
+                    <div class="product-card w-full h-auto p-6 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/male/male_cloth_ 1.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">Printed T-shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;400</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">M</p>
+                        </div>
+                    </div>
+                    <div class="product-card w-full h-auto p-4 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/male/male_cloth_ 2.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">White T-shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;200</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">L</p>
+                        </div>
+                    </div>
+                    <div class="product-card w-full h-auto p-4 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/male/male_cloth_ 3.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">Classic shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;800</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">M</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="product-card w-full h-auto p-4 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/male/male_cloth_ 4.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">Black T-shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;400</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">XL</p>
+                        </div>
+                    </div>
+                    <div class="product-card w-full h-auto p-4 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/male/male_cloth_ 5.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">Printed T-shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;200</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">L</p>
+                        </div>
+                    </div>
+                    <div class="product-card w-full h-auto p-4 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/male/male_cloth_ 6.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">Shirt's Combo</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;1400</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">M</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="female-cloths flex justify-center items-center flex-col lg:flex-row gap-2">
+                <div class="p-4">
+                    <div class="product-card w-full h-auto p-6 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/female/female_cloth_ 1.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">Printed shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;600</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">M</p>
+                        </div>
+                    </div>
+                    <div class="product-card w-full h-auto p-4 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/female/female_cloth_ 2.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">White T-shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;250</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">M</p>
+                        </div>
+                    </div>
+                    <div class="product-card w-full h-auto p-4 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/female/female_cloth_ 3.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">Printed red t-shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;800</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">XL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="product-card w-full h-auto p-4 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/female/female_cloth_ 4.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">Printed shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;650</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">M</p>
+                        </div>
+                    </div>
+                    <div class="product-card w-full h-auto p-4 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/female/female_cloth_ 5.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">Printed T-shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;200</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">L</p>
+                        </div>
+                    </div>
+                    <div class="product-card w-full h-auto p-4 flex justify-center items-center flex-col gap-2">
+                        <img src="./src/Assets/products/female/female_cloth_ 6.jpg" class="rounded-2xl" alt="">
+                        <h2 class="text-2xl font-bold uppercase">black t-shirt</h2>
+                        <div class="w-full flex justify-center items-center gap-2">
+                            <p class="font-semibold text-xl">&#8377;240</p>
+                            <span>|</span>
+                            <p class="font-semibold text-xl">L</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-screen h-screen">
+        <div class="w-full h-full bg-gray-800 flex justify-center flex-col items-center p-4 lg:gap-6">
+            <div class="contact-text w-full text-center">
+                <h2 class="text-4xl text-white font-bold font-mono">Contact Us</h2>
+            </div>
+            <div class="contact-card flex justify-center items-center mt-6 hover:mt-10 p-10 h-auto gap-6 flex-col ring-1 md:border-1 md:border-white hover:bg-white  ring-white rounded-2xl hover:shadow-2xl hover:scale-[1.2] transition-all cursor-pointer group">
+                <img class="rounded-2xl w-60" src="./src/Assets/contact.png" alt="">
+                <div class="flex justify-center items-center gap-2 w-full">
+                    <i class="fa-brands fa-whatsapp font-bold text-2xl text-white group-hover:text-black"></i>
+                    <p class="text-xl text-white font-bold font-mono group-hover:text-black">9999999999</p>
+                </div>
+                <div class="flex justify-center items-center gap-2 w-full">
+                    <i class="fa-solid fa-envelope font-bold text-2xl text-white group-hover:text-black"></i>
+                    <p class="text-xl text-white font-bold font-mono group-hover:text-black">clothz@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-screen h-20 bg-gray-950 flex justify-center items-center flex-col gap-2">
+        <h2 class="brand-name uppercase text-white font-sans font-bold text-2xl text-center">&copy; Clothz</h2>
+        <p class="creater text-red-600 font-bold font-sans uppercase">Made by <a class="lowercase text-white tracking-wider font-bold font-mono" href="https://www.github.com/codelavkush">CodeLavkush</a></p>
+    </footer>
+</body>
+
+</html>

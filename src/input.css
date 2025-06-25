@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+
+@layer base{
+    body{
+        @apply relative w-screen overflow-x-hidden scroll-smooth;
+    }
+}
