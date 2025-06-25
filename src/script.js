@@ -20,7 +20,7 @@ function toggleDisplay(showEl, hideEl, showUnderline, hideUnderline) {
     hideUnderline.classList.remove("flex");
     hideUnderline.classList.add("hidden");
 
-    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    ScrollTrigger.getAll().filter(trigger => trigger.vars.id === 'product-card').forEach(trigger => trigger.kill());
 
     if (typeof window.animateProductCards === 'function') {
         window.animateProductCards();
